@@ -1,0 +1,12 @@
+# -- coding: utf-8 --
+n = int(input('Введите число: '))
+
+def factorial():
+    f = 1
+    sum = 0
+    for i in range(2, n + 1):
+        f = f * i
+        sum = sum + f
+    print(sum)
+
+factorial()
