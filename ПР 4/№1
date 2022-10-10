@@ -1,0 +1,11 @@
+# -- coding: utf-8 --
+A = int(input(" Введите число: "))
+B = int(input(" Второе: "))
+
+def add(A, B):
+    for i in range(A, B + 1):
+        if A <= B:
+            print(i)
+        else:
+            print(" Убедитесь, что A <= B ")
+add(A, B)
