@@ -1,0 +1,10 @@
+# -- coding: utf-8 --
+n = int(input('Введите число: '))
+
+def factorial():
+    f = 1
+    for i in range(2, n + 1):
+        f = f * i
+    print('Факториал', n, 'равен:', f)
+
+factorial()
