@@ -1,0 +1,8 @@
+def replacement():
+    s = input ("Введите строку, которая содержит двоеточие(':') \n")
+    
+    print('Замена:',s.replace (':', '%'))
+
+    print('Кол-во замен в строке:',s.count(':'))
+
+replacement()
