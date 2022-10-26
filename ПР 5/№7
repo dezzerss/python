@@ -1,0 +1,14 @@
+# -- coding: utf-8 --
+def subsequence():
+    a = int(input())
+    b = int(input())
+    n = 0
+    while a != 0 and b != 0:
+        if a > b:
+            n = n + 1 
+            a = b 
+        else:
+            a = b 
+        b = int(input())
+    print(n,'числа больше предыдущего')
+subsequence()
