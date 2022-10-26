@@ -1,0 +1,7 @@
+# -- coding: utf-8 --
+def subsequence():
+    n = 0
+    while int(input()) != 0:
+        n = n + 1 
+    print('Кол-во членов последовательности равно',n)
+subsequence()
