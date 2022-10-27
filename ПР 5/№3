@@ -1,0 +1,11 @@
+# -- coding: utf-8 --
+def f():
+    from math import log
+    
+    power = int(log(int(input('Введите число: ')), 2))
+    num = 1
+    for i in range(power):
+        num *= 2
+
+    print(power, num)
+f()
