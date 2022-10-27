@@ -1,0 +1,13 @@
+# -- coding: utf-8 --
+def sumaa():
+    n = int(input())
+    count = 0
+    q = 0
+    while n != 0:
+        q += n
+        count += 1
+        n = int(input())
+        c = q / count
+    print(c)
+    
+sumaa()
