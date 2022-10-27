@@ -1,0 +1,11 @@
+# -- coding: utf-8 --
+def array():
+    n = int(input("Введите длину массива "))
+    a = []
+    for i in range(n):
+        print('Введите',i,'элемент')
+        a.append(int(input()))
+    print('Массив будет выглядеть след образом:',a)
+    print('Минимальный элемент равен:',min(a))
+
+array()
