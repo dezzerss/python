@@ -1,0 +1,19 @@
+# -- coding: utf-8 --
+def array():
+    n = int(input("Введите длину массива "))
+    a = [] #исходный массив 
+    b = [] #второй массив 
+    c = [] #третий массив 
+    for i in range(n):
+        print('Введите',i,'элемент')
+        a.append(int(input()))
+    for i in range(n):
+        if a[i] >= 0:
+                b.append(a[i])
+        else:
+            c.append(a[i])
+    print(a)
+    print(b)
+    print(c)
+
+array()
