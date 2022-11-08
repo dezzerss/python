@@ -1,0 +1,13 @@
+import math
+def f():
+    print("Введите стороны треугольника: ")
+    x = int(input())
+    y = int(input())
+    z = int(input())
+    print("Введите сторону правильного шестиугольника: ")
+    a = int(input())
+    s1 = (math.sqrt(3) / 4) * a ** 2
+    s = s1 * 6
+    print(s)
+
+f()
