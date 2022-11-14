@@ -10,3 +10,7 @@ y3 = int(input('Введите 2-ю сторону 3-го прямоуг.: '))
 s1 = x1*y1
 s2 = y2*x2
 s3 = x3*y3
+
+print(s1)
+print(s2)
+print(s3)
