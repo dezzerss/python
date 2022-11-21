@@ -1,3 +1,4 @@
+# -- coding: utf-8 --
 def square():
     n = int(input('Введите кол-во строк: '))
     m = int(input('Введите кол-во столбцов: '))
