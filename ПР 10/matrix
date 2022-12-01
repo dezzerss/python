@@ -71,3 +71,5 @@ for i in range(n):
         print(file.write(a[i][j] + ' '))
     print(file.write('\n'))
 file.close()
+
+#у меня не выводится измененный массив, перепробовал все, что знаю, не получается (((
