@@ -1,0 +1,8 @@
+def rec_sum(n, s = 0):
+    a, b = divmod(n, 10)
+    s += b
+    if a == 0:
+        return print(s)
+    rec_sum(a, s)
+
+rec_sum(int(input()))
