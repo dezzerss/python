@@ -34,6 +34,55 @@ public static void matrixOperation(int[][] v) {
         }
     }
     System.out.println("Сумма чисел: " + summ);
+
+
+
+
+import java.util.Random;
+
+public class Matrix {
+    int[][] d;
+    public int[][] Matrix(int x) {
+        int[][] massive = new int[x][x];
+        Random rand = new Random();
+        for (int i = 0; i < x; i++) {
+            for (int y = 0; y < x; y++) {
+                massive[i][y] = rand.nextInt(9 + 1);
+            }
+        }
+        return massive;
+    }
+
+    public void MatrixPrint(int[][] c) {
+        for (int[] ints : c) {
+            for (int anInt : ints) {
+                System.out.print(anInt + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    public void matrixOperate(int[][] v) {
+        int summ = 0;
+        int residual = 0;
+        int operation = 1;
+        for (var i = 0; i < v.length; i++) {
+            for (var y = 0; y < v.length; y++) {
+                if (i < y) {
+                    summ += v[i][y];
+                } else if (i > y) {
+                    residual -= v[i][y];
+                } else {
+                    operation *= v[i][y];
+                }
+            }
+        }
+        System.out.println("Сумма чисел: " + summ);
+        System.out.println("Произведение чисел: " + operation);
+        System.out.println("Разность:" + residual);
+    }
+}
+
     System.out.println("Произведение чисел: " + operation);
     System.out.println("Разность:" + residual);
 }
