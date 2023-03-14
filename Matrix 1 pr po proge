@@ -1,0 +1,39 @@
+public static int[][] matrixCreation(int x) {
+    int[][] massive = new int[x][x];
+    for (var i = 0; i < massive.length; i++) {
+        for (var y = 0; y < massive.length; y++) {
+            Random rand = new Random();
+            massive[i][y] = rand.nextInt(9 + 1);
+        }
+    }
+    return massive;
+}
+
+public static void printMatrix(int[][] c) {
+    for (int[] ints : c) {
+        for (int anInt : ints) {
+            System.out.print(anInt + " ");
+        }
+        System.out.println();
+    }
+}
+
+public static void matrixOperation(int[][] v) {
+    int summ = 0;
+    int residual = 0;
+    int operation = 1;
+    for (var i = 0; i < v.length; i++) {
+        for (var y = 0; y < v.length; y++) {
+            if (i < y) {
+                summ += v[i][y];
+            } else if (i > y) {
+                residual -= v[i][y];
+            } else {
+                operation *= v[i][y];
+            }
+        }
+    }
+    System.out.println("Сумма чисел: " + summ);
+    System.out.println("Произведение чисел: " + operation);
+    System.out.println("Разность:" + residual);
+}
