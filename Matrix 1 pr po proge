@@ -86,3 +86,16 @@ public class Matrix {
     System.out.println("Произведение чисел: " + operation);
     System.out.println("Разность:" + residual);
 }
+
+
+
+
+
+import java.util.Random;
+
+public class Main {
+    public static void main(String[] args) {
+        Matrix d = new Matrix();
+        System.out.println(d);
+    }
+}
